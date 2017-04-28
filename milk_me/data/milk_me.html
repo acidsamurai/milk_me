@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>milk_him</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+	  <style type="text/css">
+    .card {
+        width: px;
+        height: 2px;
+        position: absolute;
+        display: inline-block;
+		left: 650px;
+		top: 11%;
+    }
+    .card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+    }
+    .card:hover .img-top {
+        display:inline;
+		left: 100px;
+		top: 2px;
+    }
+	
+	.milkText {
+		width: px;
+        height: 2px;
+        position: absolute;
+		top:55%;
+		left:35%;
+		
+		}
+		
+		
+		
+</style>
+  
+</head>
+
+<body>
+  <div class="test" contenteditable>
+  milk_me
+ 
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+
+    
+    <filter id="squiggly-0">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+    <filter id="squiggly-1">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+    </filter>
+    
+    <filter id="squiggly-2">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+    <filter id="squiggly-3">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+    </filter>
+    
+    <filter id="squiggly-4">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+  </defs> 
+</svg>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<div class="card">
+        <img src="milk_me.gif" alt="Card Back">
+        <img src="fool.png" class="img-top" alt="Card Front">
+    </div>
+  
+  <!-- old setup
+   
+  	<p align="center">
+	
+	
+	<div align="middle">
+		<img id="mySecondImage" src="milk_me.gif"/>
+	</div>	
+	
+	<div align="middle">
+		<button class="button" onclick="document.getElementById('myImage').src='fool.png'">milk</button>
+	</div>	
+		
+	<div align="center">	
+		<img id="myImage" "src=fool.png"/>
+	</div>		
+		
+	</p>
+-->
+<div class="milkText">
+	<p> do not touch the cow</p>
+</div>
+	
+	
+<audio src="jpn.mp3" autoplay></audio>
+</body>
+</html>
