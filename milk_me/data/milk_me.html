@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="css/style.css">
 
 	  <style type="text/css">
+	 
     .card {
         width: px;
         height: 2px;
@@ -43,51 +44,107 @@
 		
 		
 </style>
+
+	<script src="milkscript.js"></script>
+		
+		
+		
   
 </head>
-
+   
 <body>
-  <div class="test" contenteditable>
+	
+	
+		<script>
+		
+  function play(){
+       var audio = document.getElementById("brucew");
+       audio.play();
+                 }
+				 
+
+				 		 
+				 
+   </script>
+
+	
+	
+	
+	
+	
+	<!-- loud audio
+	<audio id="jpn" src="jpn.mp3" autoplay></audio> 
+	-->
+	
+		<audio id= "jpn" onloadeddata="setHalfVolume()" autoplay>
+		<source src="jpn.mp3"  type="audio/mp3">
+		</audio>
+		
+		
+	
+		<!-- new setup -->
+		<div>
+			<div class="test" contenteditable>
   milk_me
  
 </div>
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-  <defs>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				  <defs>
 
-    
-    <filter id="squiggly-0">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
-      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
-    </filter>
-    <filter id="squiggly-1">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
-<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-    </filter>
-    
-    <filter id="squiggly-2">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
-<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-    </filter>
-    <filter id="squiggly-3">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
-<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
-    </filter>
-    
-    <filter id="squiggly-4">
-      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
-<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
-    </filter>
-  </defs> 
-</svg>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+					
+					<filter id="squiggly-0">
+					  <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+					  <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+					</filter>
+					<filter id="squiggly-1">
+					  <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+				<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+					</filter>
+					
+					<filter id="squiggly-2">
+					  <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+				<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+					</filter>
+					<filter id="squiggly-3">
+					  <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+				<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+					</filter>
+					
+					<filter id="squiggly-4">
+					  <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+				<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+					</filter>
+				  </defs> 
+				</svg>
+				  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-<div class="card">
+	
+	
+	<!-- sound on fool.png click
+	<div class="card">
         <img src="milk_me.gif" alt="Card Back">
-        <img src="fool.png" class="img-top" alt="Card Front">
+        <img src="fool.png" class="img-top" alt="Card Front" value="PLAY"  onclick="play()">
+		<audio id="brucew" src="brucew.wav" ></audio>
     </div>
-  
-  <!-- old setup
+	-->
+	
+	
+	<div class="card">
+        <img src="milk_me.gif" alt="Card Back" value="PLAY"  onclick="play()">
+		<audio id="brucew" src="brucew.wav" ></audio>
+        <img src="fool.png" class="img-top" alt="Card Front">
+		
+    </div>
+	
+	
+	
+	
+</div>
+
+		
+
+	<!-- old setup
    
   	<p align="center">
 	
@@ -106,11 +163,16 @@
 		
 	</p>
 -->
-<div class="milkText">
+	<div class="milkText">
+	
+	
 	<p> do not touch the cow</p>
+	
+	
 </div>
 	
+
 	
-<audio src="jpn.mp3" autoplay></audio>
+
 </body>
 </html>
